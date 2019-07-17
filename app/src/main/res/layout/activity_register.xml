@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homeex"
+    tools:context=".register">
+
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="ALREADY HAVE AN ACCOUNT?"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="89dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="REGISTER"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="18dp"
+        android:text="REGISTRATION"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="95dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="156dp"
+        android:layout_height="192dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="83dp"
+        app:srcCompat="@drawable/reg"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp" />
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="92dp"
+        android:hint="Enter Username"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="132dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+    <EditText
+        android:id="@+id/pass2"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginTop="215dp"
+        android:textColorHint="@color/white"
+        android:hint="Confirm Password"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+        android:layout_alignLeft="@+id/username" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginTop="172dp"
+        android:textColorHint="@color/white"
+        android:hint="Enter Password"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />
+
+    <!--  <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="60dp"
+         #   android:text="Generating Feed"
+         #   android:textSize="22sp" />-->
+
+</RelativeLayout>
